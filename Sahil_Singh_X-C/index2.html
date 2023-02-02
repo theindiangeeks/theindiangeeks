@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title> Global Warming | Page 3 </title>
+  <link href="sahil.css" type="text/css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bowlby+One+SC&family=Caveat:wght@500&family=Handlee&family=Khula:wght@700&family=Quicksand:wght@300;400&family=Raleway&family=Satisfy&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Intro -->
+
+<div class="global_main">
+
+  <h3 class="intro_title" align="center"> If This Continues </h3>
+
+
+
+  <video autoplay plays-inline class="global_intro" muted >
+  <source src="sahil_videos/vid3.mp4"  type="video/mp4">
+  </video>
+</div>
+<img src="sahil_images/img5.png" alt="" class="background_dark">
+
+
+
+<script>
+  function $redirect1(){
+    window.open('index3.html',"_self");
+  }
+  var $document_video = document.querySelector(".global_intro");
+  $document_video.addEventListener("ended" , $redirect1);
+  function unHideText(){
+    document.querySelector(".intro_title").style.display = "block";
+  }
+  setTimeout( unHideText, 16000);
+  </script>
+  <script src="sahil.js">
+  </script>
+
+</body>
+</html>

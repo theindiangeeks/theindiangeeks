@@ -1,0 +1,123 @@
+
+<html>
+  <head>
+
+  <title>Page 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bowlby+One+SC&family=Caveat:wght@500&family=Handlee&family=Khula:wght@700&family=Quicksand:wght@300;400&family=Raleway&family=Satisfy&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <style>
+      *{
+        margin:0px;
+        padding:0px;
+        transition-duration:1s;
+
+      }
+      .banner1{
+        width:100%;
+        height:100vh;
+        backgroud-image:linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+        position:relative;
+        padding:0.5%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+      }
+      .contents{
+        font-family: 'Shadows Into Light', monospace;
+        display:inline-block;
+        font-size:3em;
+
+        letter-spacing:3px;
+        color:white;
+        text-align:center;
+        margin:auto;
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform:translateX(-50%)translateY(-50%);
+
+
+
+      }
+      .contents:hover{
+        color:lime;
+        letter-spacing: 0.03em;
+        font-size:4em;
+        text-decoration:underline;
+      }
+      .back_video{
+        position:absolute;
+        right:0;
+        bottom:0;
+        z-index:-1;
+        filter: blur(2px);
+        overflow:hidden;
+        object-fit:cover;
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+      }
+      .dark_effect{
+        right:0;
+        bottom:0;
+        z-index:-1;
+        filter: opacity(60%);
+        overflow:hidden;
+        object-fit:cover;
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+      }
+      .to_click:hover{
+        text-decoration:underline;
+        background-color:green;
+        border-color:green;
+        color:black;
+        font-size:23px;
+        border:none;
+        border:2px solid green;
+        line-height:1.5em;
+        color:white;
+        color:black;
+      }
+
+      </style>
+  </head>
+  <body bgcolor='grey'>
+    <video autoplay loop muted class="back_video">
+          <source src="sahil_videos/vid4.mp4"> </video>
+<img src="sahil_images/img5.png" alt="" class="dark_effect">
+    <div class="contents">
+
+
+    <h3 class="abhishekSir"> Global Warming </h3>    <h5  style="font-weight:thinner;border:2px solid white; border-radius:50px;padding:14px 70px;font-size:25px;width:20%;margin:auto auto auto auto ; line-height:1em;width:40%;color:lime;" class="to_click"> Let's Begin </h5>
+
+    </div>
+
+<script>
+var $button = document.querySelector("h5");
+function $change_color(){
+
+$button.style.borderColor = "#00f3ff";
+$button.style.color = "#00f3ff";
+}
+$button.addEventListener('click',$change_color);
+document.querySelector('.to_click').addEventListener("click", function(){
+  window.open('index2.html', "_blank");
+})
+</script>
+<script src="sahil.js">
+</script>
+
+  </body>
+</html>

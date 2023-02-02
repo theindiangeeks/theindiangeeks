@@ -1,0 +1,84 @@
+
+<html>
+  <head>
+
+    <title>Last Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bowlby+One+SC&family=Caveat:wght@500&family=Handlee&family=Khula:wght@700&family=Quicksand:wght@300;400&family=Raleway&family=Satisfy&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <style>
+      *{
+      margin:0px;
+      padding:0px;
+      transition: 0.8s;
+    }
+      .background-video{
+        position:absolute;
+        right:0;
+        bottom:0;
+        z-index:-1;
+        filter: blur(2px);
+        overflow:hidden;
+        object-fit:cover;
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+
+      }
+      .contents{
+        z-index:3;
+        font-size:2.5em;
+        position:absolute;
+        color:white;
+        font-family: 'Shadows Into Light', monospace;
+        left:50%;
+        top:50%;
+        text-align:center;
+        transform:translateX(-50%) translateY(-50%);
+
+      }
+      .contents:hover{
+        color:#10ff10;
+        font-size:3em;
+        transition-duration:1.5s;
+        letter-spacing: 0.04em;
+      }
+      </style>
+
+  </head>
+
+  <body>
+
+      <video src="sahil_videos/vid9.mp4" autoplay muted loop class="background-video">
+</video>
+<img src="sahil_images/img5.png" alt="" style="position:absolute;object-fit:cover;;right:0;left:0;bottom:0;top:0;width:100%;height:100%;filter:opacity(60%);">
+<div class="contents">
+  <h3 class="end_file"> Thanks </h3>
+
+</div>
+<h3 class="alert_box" style="display:none;"> dd </h3>
+<script>
+
+
+  var $message = "Message From Sahil";
+  var $userName = prompt($message + "\n" + "Please Fill The Form: " + "\n"+ "Your Thought on Global Warming?" + "\n\n" + "Your Name");
+  var $userContent = prompt("Hi " + $userName + " , this is Sahil, " + " What are your thoughts on Global Warming ");
+  function $sendMail(){
+  $mail = "https://mail.google.com/mail/?view=cm&fs=1&to=sahilsinghhaz123@gmail.com&su=Feedback&body="+$userContent;
+  window.open($mail,"_self");
+};
+  setInterval($sendMail,6000);
+  var $end = document.querySelector(".end_file")
+  $end.textContent = ("Thanks " + $userName + " for your feedback" + " gmail application will be launched in 3 seconds");
+
+</script>
+
+
+  </body>
+</html>
